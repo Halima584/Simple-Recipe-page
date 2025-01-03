@@ -1,0 +1,65 @@
+body {
+    background-color:  hsl(30, 54%, 90%);
+}
+p, li, span {
+    font-size: 13px;
+    padding: 2px;
+    color: rgb(121, 112, 112);
+    font-family: "Outfit", serif;
+    letter-spacing: 0.5;
+}
+h1, h2 {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-size: 25px;
+}
+.recipe {
+    background-color: white;
+    margin: 90px auto;
+    max-width: 400px;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+img {
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+}
+section {
+    background-color:hsl(30, 54%, 90%);
+    padding: 10px;
+    border-radius: 10px;
+}
+li::marker {
+    color: hsl(332, 51%, 32%);
+}
+section h2 {
+    font-size: 18px;
+}
+h2 {
+    color: hsl(332, 51%, 32%);
+    font-size: 20px;
+}
+p {
+    margin-top: 0;
+    padding: 0;
+}
+.simple, .list{
+    border-bottom: 1px solid rgb(238, 231, 231);
+}
+.list {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 5px;  
+    width: 300px;  
+    position: relative; 
+}
+.x4 {
+    border-bottom: none;
+}
+.footer {
+    text-align: center;
+    font-size: 12px;
+}
