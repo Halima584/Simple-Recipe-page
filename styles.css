@@ -1,12 +1,26 @@
 body {
     background-color:  hsl(30, 54%, 90%);
 }
-p, li, span {
+p, .section li, span, tr {
     font-size: 13px;
     padding: 2px;
     color: rgb(121, 112, 112);
     font-family: "Outfit", serif;
     letter-spacing: 0.5;
+}
+main li {
+    font-size: 13px;
+    font-family: "Outfit", serif;
+    letter-spacing: 0.5;
+    color: rgb(121, 112, 112);
+    padding-top: 2px;
+    padding-bottom: 3px;
+    padding-left: 7px;
+}
+main ul, ol {
+    border-bottom: 1px solid rgb(240, 237, 237);
+    padding-bottom: 20px;
+    padding-left: 15px;
 }
 h1, h2 {
     font-family: "Young Serif", serif;
@@ -16,23 +30,24 @@ h1, h2 {
 .recipe {
     background-color: white;
     margin: 90px auto;
-    max-width: 400px;
+    max-width: 500px;
     padding: 25px;
     border-radius: 10px;
     margin-bottom: 10px;
 }
 img {
-    max-width: 400px;
+    width: 100%;
     height: auto;
     border-radius: 10px;
 }
 .section {
-    background-color:hsl(30, 54%, 90%);
+    background-color: hsl(330, 100%, 98%);
     padding: 10px;
     border-radius: 10px;
 }
-li::marker {
+li::marker, td {
     color: hsl(332, 51%, 32%);
+    font-weight: 800;
 }
 .section h2 {
     font-size: 18px;
@@ -45,17 +60,22 @@ p {
     margin-top: 0;
     padding: 0;
 }
-main, .list{
-    border-bottom: 1px solid rgb(238, 231, 231);
+.nutrition table {
+    border-collapse: collapse;
+    width: 100%;
 }
-.list {
-    display: flex;
-    justify-content: space-between;
-    margin: 10px;
-    padding: 5px;  
-    width: 300px;  
+.nutrition table tr {
+    border-bottom: 1px solid rgb(240, 237, 237);
 }
-.x4 {
+.nutrition table th,
+.nutrition table td {
+    text-align: left;
+    padding: 0.5rem 2rem;
+}
+th {
+    font-weight: normal;
+}
+.nutrition table .last {
     border-bottom: none;
 }
 footer {
